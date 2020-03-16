@@ -1,0 +1,41 @@
+
+<!doctype html>
+<html>
+  <head>
+      <meta charset="utf-8">
+  </head>
+
+  <body>
+    <h1>object</h1>
+    <script>
+      var cowokers = {
+        "prog":"pr1",
+        "design":"de1"
+      };
+    //  document.write(cowokers.prog+"<br>");
+    //  document.write(cowokers.design+"<br>");
+    </script>
+
+    <script>
+      for(var key in cowokers){
+  //      document.write(key+'<br>');
+  //      document.write(cowokers[key]+'<br>');
+      }
+    </script>
+
+    <script>
+      cowokers.showAll = function(){
+        for(var key in cowokers){
+          document.write(key+'<br>');
+          document.write(this[key]+'<br>');
+        }
+      }
+      cowokers.showAll();
+
+    </script>
+
+
+
+
+  </body>
+</html>

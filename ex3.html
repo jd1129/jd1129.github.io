@@ -1,0 +1,46 @@
+
+<!doctype html>
+<html>
+<head>
+  <script>
+    function nightDayHandler(self){
+      if(self.value === 'night'){
+        document.querySelector('body').style.backgroundColor = 'black';
+        document.querySelector('body').style.color = 'white';
+        self.value = 'day';
+
+      } else{
+        document.querySelector('body').style.backgroundColor = 'white';
+        document.querySelector('body').style.color = 'black';
+        self.value = 'night';
+      }
+    }
+
+  </script>
+
+  <style>
+    .js{
+      font-weight:bold;
+    }
+    #first{
+      color:red;
+    }
+    span{
+      color:blue;
+    }
+  </style>
+  <title>고슐랭의 가이드투어 - 집</title>
+  <meta charset="utf-8">
+  <!--<link rel="stylesheet" href="style.css"> -->
+</head>
+
+<body>
+  <h1><a href="index.html">JD&JH</a></h1>
+
+  <input type="button" value="night" onclick="
+    nightDayHandler(this);
+  ">
+
+
+</body>
+</html>
